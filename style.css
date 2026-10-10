@@ -1,0 +1,12 @@
+.overflow{
+    /* box-sizing: border-box; */
+    height: 20vh;
+    width: 30vw;
+    border: 2px solid black;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.over {
+    white-space: nowrap;
+}
