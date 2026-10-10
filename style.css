@@ -1,12 +1,39 @@
-.overflow{
+.over {
     /* box-sizing: border-box; */
     height: 20vh;
     width: 30vw;
     border: 2px solid black;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.over {
+ overflow: auto auto;
+/* text-overflow: ellipsis; */
     white-space: nowrap;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.item{
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+@media only screen and (max-width: 500px){
+   .container{
+    grid-template-columns: 1fr 1fr;
+    
+   }
+   .item{
+    background-color: brown;
+   }
+}
+@media only screen and (max-width: 230px){
+   .container{
+    grid-template-columns: 1fr ;
+    
+   }
+   .item{
+    background-color: rgb(7, 63, 26);
+   }
 }
