@@ -37,3 +37,52 @@
     background-color: rgb(7, 63, 26);
    }
 }
+.ball{
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(18, 81, 175);
+    border-radius: 100%;
+    background-color: rgb(22, 36, 161);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    animation: Aayush1 10s linear  infinite normal;
+              
+}
+@keyframes Aayush1 {
+   0%{
+    transform: translate(10px,0px) rotate(36deg);
+   }
+   10%{
+    transform: translate(30px,100px) rotate(72deg);
+   }
+    20%{
+        transform: translate(50px,0px) rotate(108deg);
+    }
+    30%{
+        transform: translate(70px,100px) rotate(140deg);
+    }
+    40%{
+        transform: translate(90px,0px) rotate(180deg);
+    }
+    50%{
+transform: translate(110px,100px) rotate(200deg);
+    }
+    60%{
+transform: translate(140px,0px) rotate(230deg);
+    }
+    70%{
+transform: translate(180px,100px) rotate(260deg);
+    }
+    80%{
+transform: translate(200px,0px) rotate(290deg);
+    }
+    90%{
+transform: translate(250px,100px) rotate(330deg);
+    }
+    100%{
+transform: translate(100px,100px) scale(2,2) rotate(360deg);
+
+    }
+}
